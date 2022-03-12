@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
+/* Reset */
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Colors */
+
+  /* ---- Primary ---- */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* ---- Neutral ---- */
+  --very-dark-blue-main-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-size: 18px;
+  --font-family: 'Outfit', sans-serif;
+}
+
+html {
+  background: var(--very-dark-blue-main-bg);
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 97vh;
+}
+
+main {
+  background: var(--very-dark-blue-card-bg);
+  width: 350px;
+  height: 596px;
+  font-family: var(--font-family);
+  border-radius: 15px;
+}
+
+.img {
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+  margin: 24px 24px;
+}
+
+section > header {
+  margin-left: 24px;
+  margin-right: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--white)
+}
+
+section > .content {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--soft-blue)
+}
+
+.content__summary-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.content__summary-box__price {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.content__summary-box__price > img {
+  margin-right: 6.48px;
+}
+
+.content__summary-box__date {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.content__summary-box__date > img {
+  margin-right: 3px;
+}
+
+footer {
+  margin-top: 24px;
+  border-top: 1px solid var(--very-dark-blue-line);
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+footer > .footer-creation > img {
+  border-radius: 100px;
+  border: 1px solid var(--white);
+  width: 33px;
+  height: 33px;
+  margin-right: 16px;
+}
+
+footer > .footer-creation {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+footer > .footer-creation > p {
+  color: #8BACD9;
+}
+
+footer > .footer-creation > p > a {
+  color: var(--white);
+  text-decoration: none;
+}
