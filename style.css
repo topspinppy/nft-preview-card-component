@@ -52,7 +52,7 @@ main {
   margin: 24px 24px;
 }
 
-section > header {
+section > h1 {
   margin-left: 24px;
   margin-right: 24px;
   font-style: normal;
